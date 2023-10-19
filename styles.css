@@ -1,0 +1,23 @@
+:root{
+    --notification: #58A6FF;
+    --github-dark: #010409;
+    --github-dark-lighter: #0d1117;
+    --github-dark-border: #30363d;
+    --github-dark-hover: #8b949e;
+    --background: #171b20;
+    --color: #828b94;
+    --github: #C9D1D9;
+    --navigation-hover: #292F36;
+    --navbar-height: 60px;
+}
+
+body{
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
