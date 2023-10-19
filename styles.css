@@ -21,3 +21,101 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.menu-container{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 2;
+    gap: 24px;
+    background-color: var(--github-dark);
+    height: var(--navbar-height);
+    padding: 0px 16px;
+    border-bottom: 1px solid var(--github-dark-border);
+    align-items: center;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-title{
+    color: var(--github);
+    padding: 8px 12px;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.page-title:hover{
+    background-color: var(--background);
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.logo svg{
+    fill: var(--github);
+}
+
+.action-buttons{
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.action-button{
+    position: relative;
+    display: grid;
+    grid-auto-columns: max-content;
+    width: 32px;
+    height: 32px;
+    color: var(--github-dark-lighter);
+    background: transparent;
+    border: 1px solid var(--github-dark-lighter);
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.action-button:hover{
+    background: var(--github-dark-lighter);
+    border: 1px solid var(--github);
+}
+
+.action-button svg{
+    fill: var(--github-button-hover);
+}
+
+.avatar-profile{
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    border: 1px solid var(--github-dark-border);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+@media (max-width: 400px){
+    .page-title{
+        display: none;
+    }
+}
+
+/* .avatar-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
