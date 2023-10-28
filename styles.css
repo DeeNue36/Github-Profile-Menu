@@ -45,7 +45,7 @@ body{
 
 .page-title{
     color: var(--github);
-    padding: 8px 12px;
+    padding: 8px 6px;
     align-items: center;
     font-weight: 700;
     border-radius: 8px;
@@ -56,9 +56,11 @@ body{
     background-color: var(--background);
 }
 
-.logo{
-    width: 32px;
-    height: 32px;
+.fa-github:before {
+    content: "\f09b";
+    color: white;
+    font-size: 35px;
+    margin-left: 40px;
     cursor: pointer;
 }
 
@@ -98,6 +100,12 @@ body{
     fill: var(--github-button-hover);
 }
 
+.fa-close{
+    content: "\f00d";
+    color: #fff;
+    visibility: hidden;
+}
+
 .avatar-profile{
     cursor: pointer;
     height: 32px;
@@ -114,57 +122,6 @@ body{
     }
 }
 
-.logo{
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-}
-
-.logo svg{
-    fill: var(--github);
-}
-
-.action-buttons{
-    display: flex;
-    gap: 8px;
-    margin-left: auto;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.action-button{
-    position: relative;
-    display: grid;
-    grid-auto-columns: max-content;
-    width: 32px;
-    height: 32px;
-    color: var(--github-dark-lighter);
-    background: transparent;
-    border: 1px solid var(--github-dark-border);
-    border-radius: 6px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.action-button:hover{
-    background: var(--github-dark-lighter);
-    border: 1px solid var(--github);
-}
-
-.action-button svg{
-    fill: var(--github-button-hover);
-}
-
-.avatar-profile{
-    cursor: pointer;
-    height: 32px;
-    width: 32px;
-    border: 1px solid var(--github-dark-border);
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 .navigation__menu{
     background-color: var(--background);
     z-index: 3;
@@ -178,7 +135,7 @@ body{
     right: 0;
     position: fixed;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    animation: fadeInAnimation ease-in-out 0.5s forwards;
+    animation: fadeInAnimation ease-in-out 1s forwards;
 }
 
 .navigation__menu__items{
@@ -286,7 +243,7 @@ body{
 .hide{
     opacity: 0;
     visibility: hidden;
-    animation: fadeOutAnimation;
+    animation: fadeOutAnimation ease-out 1s;
 }
 
 @keyframes fadeOutAnimation {
