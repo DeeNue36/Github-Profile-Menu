@@ -181,6 +181,127 @@ body{
     animation: fadeInAnimation ease-in-out 0.5s forwards;
 }
 
+.navigation__menu__items{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 16px;
+    padding: 0px;
+    color: var(--github-button-hover);
+}
+
+.navigation__menu__items > li{
+    display: flex;
+    gap: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color);
+    padding: 0px 8px;
+}
+
+.navigation__menu__items > li:hover{
+    background-color: var(--navigation-hover);
+    color: var(--github);
+}
+
+.navigation__menu__items > li > svg{
+    fill: var(--github);
+}
+
+.navigation__menu__items > .separator > hr{
+    border: 1px solid var(--github-dark-border);    
+    width: 100%;
+}
+
+.avatar-container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.avatar-container .avatar-profile{
+    width: 42px;
+    height: 42px;
+}
+
+.avatar-name-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-name-alias{
+    color: var(--github);
+    font-weight: 600;
+}
+
+.avatar-name{
+    color: var(--color);
+    font-size: 12px;
+}
+
+.close-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: auto;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+.close-button:hover{
+    background-color: var(--navigation-hover);
+}
+
+.close-button svg{
+    height: 16px;
+    width: 16px;
+    fill: var(--github);
+}
+
+@keyframes fadeInAnimation {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        max-width: 0px;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        max-width: 320px;
+    }
+}
+
+.none{
+    display: none;
+}
+
+.hide{
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeOutAnimation;
+}
+
+@keyframes fadeOutAnimation {
+    0%{
+        opacity: 1;
+        visibility: visible;
+        max-width: 320px;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        max-width: 0px;
+    }
+}
+
 /* .avatar-profile{
     width: 50px;
     height: 50px;
